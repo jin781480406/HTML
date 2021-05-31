@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li:first-of-type {
+            background-color: hotpink;
+        }
+        ul li:last-of-type {
+            background-color: indigo;
+        }
+        ul li:nth-of-type(even) {
+            background-color: skyblue;
+        }
+        /* 区别 */
+        /* :nth-child()会把所有的盒子都排列序号 */
+        /* 执行的时候会首先看 :nth-child(1) 之后回去看 前面的div  */
+        section div:nth-child(1) {
+            background-color: skyblue;
+        }
+        /* nth-of-type会把指定元素的盒子都排列序号 */
+        /* 执行的时候会首先看 前面的div 之后回去看 :nth-of-type(1)  */
+        section div:nth-of-type(1) {
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>第1个孩子</li>
+        <li>第2个孩子</li>
+        <li>第3个孩子</li>
+        <li>第4个孩子</li>
+        <li>第5个孩子</li>
+        <li>第6个孩子</li>
+        <li>第7个孩子</li>
+        <li>第8个孩子</li>
+    </ul>
+    <!-- 区别 -->
+    <section>
+        <p>光头强</p>
+        <div>熊大</div>
+        <div>熊二</div>
+    </section>
+</body>
+</html>

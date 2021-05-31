@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "17671",
+      "name": "优2",
+      "font_class": "you2",
+      "unicode": "f02b9",
+      "unicode_decimal": 983737
+    },
+    {
+      "icon_id": "5474820",
+      "name": "天气",
+      "font_class": "tianqi",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "20741378",
+      "name": "相机",
+      "font_class": "xiangji",
+      "unicode": "f375",
+      "unicode_decimal": 62325
+    }
+  ]
+}

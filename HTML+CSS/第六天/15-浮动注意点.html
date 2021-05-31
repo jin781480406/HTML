@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 浮动元素都有一个标准流的父元素 */
+        /* 浮动的盒子只会影响浮动盒子后面的标准流，不会影响前面的标准流 */
+        .box {
+            width: 900px;
+            height: 500px;
+            background-color: hotpink;
+            margin: 0 auto;
+        }
+        .damao {
+            width: 300px;
+            height: 310px;
+            background-color: indigo;
+            float: left;
+        }
+        .ermao {
+            width: 250px;
+            height: 380px;
+            background-color: rgb(102, 138, 72);
+            /* float: left; */
+        }
+        .sanmao {
+            width: 350px;
+            height: 220px;
+            background-color: rgb(179, 167, 13);
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="damao">大毛</div>
+        <div class="ermao">二毛</div>
+        <div class="sanmao">三毛</div>
+    </div>
+</body>
+</html>

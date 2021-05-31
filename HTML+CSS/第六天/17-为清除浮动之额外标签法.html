@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 900px;
+            /* background-color: lawngreen; */
+            border: 5px solid red;
+            margin: 0 auto;
+        }
+        .box .damao {
+            width: 300px;
+            height: 300px;
+            background-color: hotpink;
+            float: left;
+        }
+        .box .ermao {
+            width: 300px;
+            height: 600px;
+            background-color: skyblue;
+            float: left;
+        }
+        /* 优点：通俗易懂，书写方便 */
+        /* 缺点：添加许多无意义的标签，结构化较差 */
+        .clear {
+            clear: both;
+        }
+        .footer {
+            height: 600px;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="damao"></div>
+        <div class="ermao"></div>
+        <!-- 注意添加的标签必须是块级元素，不能是行内元素 -->
+        <div class="clear"></div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

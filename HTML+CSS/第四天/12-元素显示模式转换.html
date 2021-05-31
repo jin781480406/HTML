@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            width: 150px;
+            height: 50px;
+            background-color: skyblue;
+            /* 把行内元素a，转换为块级元素 */
+            display: block;
+        }
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: green;
+            /* 把块级元素div,转换为行内元素 */
+            /* 高和宽就没有效果了 */
+            display: inline;
+        }
+        span {
+            width: 100px;
+            height: 30px;
+            background-color: red;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">金星阿姨</a>
+    <div>我是块级元素</div>
+    <span>行内元素转换为行内块元素</span>
+</body>
+</html>

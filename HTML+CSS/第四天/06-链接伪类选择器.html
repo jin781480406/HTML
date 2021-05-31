@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 伪类选择器的顺序不能颠倒:link :visited :hover :active  */
+        /* 口诀是love hate 简称lvha */
+        /* 未访问过的链接a:link把没有点击过的链接选择出来 */
+        a:link {
+            color: #333;
+            text-decoration: none;
+        }
+        /* a:visited 选择已经点击过的链接 */
+        a:visited {
+            color: orange;
+        }
+        /* a:hover 选择鼠标经过的链接  */
+        a:hover {
+            color: skyblue;
+        }
+        /* a:active 选择鼠标已经按下去但没有弹起来的链接 */
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">小猪佩奇</a>
+</body>
+</html>

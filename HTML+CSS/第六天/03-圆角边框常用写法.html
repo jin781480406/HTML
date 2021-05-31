@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .yuanxing {
+            width: 200px;
+            height: 200px;
+            background-color: blanchedalmond;
+            /* 50%就是长度和宽度的一半，等价于100px */
+            border-radius: 50%;
+        }
+        .juxing {
+            width: 300px;
+            height: 100px;
+            background-color: blanchedalmond;
+            /* 是高度的一半 */
+            border-radius: 50px;
+        }
+        .radius {
+            width: 200px;
+            height: 200px;
+            background-color: blanchedalmond;
+            /* 上右下左的顺序 */
+            /* border-radius: 10px 20px 30px 40px; */
+            /* 可以3个，可以2个 */
+            /*  border-radius: 10px 50px; */
+            /* border-radius: 10px 30px 60px;  */
+            /* 先top然后left，先top然后right，先bottom然后left，先bottom然后right */
+            border-top-left-radius: 20px ;
+        }
+    </style>
+</head>
+<body>
+    圆形的
+    <div class="yuanxing"></div>
+    矩形的
+    <div class="juxing"></div>
+    设置不同的圆角
+    <div class="radius"></div>
+</body>
+</html>
